@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="appu_white" size="1.000000 1.000000" />
+    <ImageTarget name="Crab_white" size="1.000000 1.000000" />
+    <ImageTarget name="duck_white" size="1.000000 1.000000" />
+    <ImageTarget name="apu5" size="100.000000 90.689651" />
+    <ImageTarget name="apu4" size="100.000000 82.462059" />
+    <ImageTarget name="apu3" size="100.000000 102.063789" />
+    <ImageTarget name="apu2" size="100.000000 85.083717" />
+    <ImageTarget name="apu1" size="100.000000 80.361755" />
+  </Tracking>
+</QCARConfig>

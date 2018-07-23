@@ -21,28 +21,28 @@ namespace Assets.SimpleAndroidNotifications
 
         // Use this for initialization
 
-        IEnumerator Start()
+        void Start()
         {
             //NotificationManager.Send(TimeSpan.FromSeconds(3600), "We are missing you", "Scan for more Magic", new Color(1, 0.3f, 0.15f));
 
-            var notificationParams = new NotificationParams
-            {
-                Id = UnityEngine.Random.Range(0, int.MaxValue),
-                Delay = TimeSpan.FromSeconds(5),
-                Title = "We are missing you",
-                Message = "Come Scan for more Magic",
-                Ticker = "Experience Augmented Reality",
-                Sound = true,
-                Vibrate = true,
-                Light = true,
-                SmallIcon = NotificationIcon.Heart,
-                SmallIconColor = new Color(0, 0, 0.5f),
-                LargeIcon = "app_icon"
-            };
+            //var notificationParams = new NotificationParams
+            //{
+            //    Id = UnityEngine.Random.Range(0, int.MaxValue),
+            //    Delay = TimeSpan.FromSeconds(5),
+            //    Title = "We are missing you",
+            //    Message = "Come Scan for more Magic",
+            //    Ticker = "Experience Augmented Reality",
+            //    Sound = true,
+            //    Vibrate = true,
+            //    Light = true,
+            //    SmallIcon = NotificationIcon.Heart,
+            //    SmallIconColor = new Color(0, 0, 0.5f),
+            //    LargeIcon = "app_icon"
+            //};
 
-            NotificationManager.SendCustom(notificationParams);
+            //NotificationManager.SendCustom(notificationParams);
 
-            yield return new WaitForSeconds(7);
+            //yield return new WaitForSeconds(7);
             instructions.SetActive(false);
 
         }
@@ -68,9 +68,9 @@ namespace Assets.SimpleAndroidNotifications
         }
         void OnApplicationPause()
         {
-            NotificationManager.Send(TimeSpan.FromSeconds(1), "We are missing you", "Scan for more Magic", new Color(1, 0.3f, 0.15f));
+            //NotificationManager.Send(TimeSpan.FromSeconds(1), "We are missing you", "Scan for more Magic", new Color(1, 0.3f, 0.15f));
 
-            Debug.Log("Application ending after " + Time.time + " seconds");
+            //Debug.Log("Application ending after " + Time.time + " seconds");
            //AndroidNativePluginLibrary.Instance.ShowToast("This is a Toast");
 
            throttle++;
